@@ -1,0 +1,15 @@
+{
+  "name": "com.farlenkov.unity-graph-editor",
+  "displayName": "UNITY / GRAPH EDITOR",
+  "version": "0.0.1",
+  "unity": "2022.3",
+  "description": "Unity Graph Editor",
+  "keywords": [
+    ""
+  ],
+  "type": "library",
+  "author": {
+    "name": "Mike Farlenkov",
+    "url": "https://farlenkov.com"
+  }
+}
