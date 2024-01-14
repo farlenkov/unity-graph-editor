@@ -87,9 +87,7 @@ namespace UnityGraphEditor
             {
                 for (var i = 0; i < change.elementsToRemove.Count; i++)
                 {
-                    var view = change.elementsToRemove[i] as NodeView;
-
-                    if (view != null)
+                    if (change.elementsToRemove[i] is NodeView)
                     {
                         change.elementsToRemove.RemoveAt(i);
                         i--;
@@ -98,10 +96,8 @@ namespace UnityGraphEditor
 
                 foreach (var el in change.elementsToRemove)
                 {
-                    if (el is not Edge edge)
-                        continue;
-
-                    OnEdgeRemove(edge);
+                    if (el is Edge edge)
+                        OnEdgeRemove(edge);
                 }
             }
 
